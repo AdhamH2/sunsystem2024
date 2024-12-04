@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- Main HTML structure for the solar system webpage -->
+<html lang="en">
+  <head>
+    <!-- Metadata and page setup -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" /> <!-- Linking external stylesheet -->
+    <title>Solaris - Our Solar System</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Solaris - Our Solar System</h1>
+      <!-- Input field for searching planets -->
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search for a planet..." />
+    </header>
+
+    <main id="content">
+      <!-- Container to hold all planet/solar body cards -->
+      <div id="bodiesContainer"></div>
+      
+      <!-- Solar system representation -->
+      <div class="solar-system">
+        <!-- Representation of Earth as a planet -->
+        <div class="planet earth"></div>
+        
+        <!-- Descriptive content about Earth -->
+        <div class="centered-content">
+          <p>
+            Earth's Shape<br>
+            <!-- Description of Earth's shape -->
+            Earth is not a perfect sphere; it bulges 
+            <br>at the equator and flattens 
+            <br>at the poles due to its rotation and
+            <br>uneven mass distribution.
+            <br><br>
+            Coral Reefs<br>
+            <!-- Information about coral reefs -->
+            Coral reefs, Earth's largest living structures, <br>
+            support marine life and protect coastlines from erosion and storms.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <!-- Linking external JavaScript file -->
+    <script src="index.js"></script>
+  </body>
+</html>

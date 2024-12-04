@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Solaris - Our Solar System</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Solaris - Our Solar System</h1>
+      <!-- Input field for searching planets -->
+      <!-- This input field allows users to search for a planet by typing its name -->
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search for a planet..."
+      />
+    </header>
+    <main id="content">
+      <!-- Container to hold all planet/solar body cards -->
+      <!-- This div is meant to dynamically contain information about different planets or other celestial bodies -->
+      <div id="bodiesContainer"></div>
+
+      <div class="solar-system">
+        <!-- Representation of Jupiter as a planet in the solar system -->
+        <div class="planet jupiter"></div>
+        
+        <!-- Content with information about Jupiter -->
+        <div class="tocent-content">
+          <!-- Paragraph containing detailed information about Jupiter -->
+          <p>
+            Jupiter, the largest and oldest planet in our solar system,
+            <br />
+            could contain 1,000 Earths within its vast size.
+            <br />
+            Formed 4.6 billion years ago from residual cosmic dust and gases,
+            <br />
+            it also boasts the shortest day,
+            <br />
+            completing a rotation in just 10.5 hours.
+            Earth is not a perfect sphere; it bulges
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <!-- Link to external JavaScript file -->
+    <!-- This script file handles the dynamic behavior of the webpage, such as searching for planets -->
+    <script src="index.js"></script>
+  </body>
+</html>

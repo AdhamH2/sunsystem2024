@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Specifies the character encoding and ensures proper rendering on different devices -->
+    <meta charset="UTF-8" />
+    <!-- Ensures the website is responsive and scales well on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Links an external CSS file for styling the webpage -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Title of the webpage shown on the browser tab -->
+    <title>Solaris - Our Solar System</title>
+  </head>
+
+  <body>
+    <header>
+      <!-- Main title of the webpage -->
+      <h1>Solaris - Our Solar System</h1>
+      <!-- Input field where users can type to search for planets -->
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search for a planet..."
+      />
+    </header>
+
+    <main id="content">
+      <!-- Section to dynamically display planet or solar body information -->
+      <div id="bodiesContainer"></div>
+
+      <!-- A container to showcase the solar system layout -->
+      <div class="solar-system">
+        <!-- A div representing the planet Venus -->
+        <div class="planet venus"></div>
+
+        <!-- Information about Venus -->
+        <div class="vena-content">
+          <p>
+            Venus, the second planet from the Sun and sixth largest in our solar system,
+            <br />
+            holds the title of the hottest planet. Named after the goddess of love,
+            <br />
+            Venus is often dubbed Earth's twin due to its similar size and proximity.
+            <br />
+            However, despite its benign namesake,
+            <br />
+            Venus presents a hellish environment.
+            <br />
+            Its surface temperature can melt lead,
+            <br />
+            and its dense atmosphere reduces the
+            <br />
+            Sun to a mere blur of light from the surface.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <!-- Links an external JavaScript file to add interactive functionality -->
+    <script src="index.js"></script>
+  </body>
+</html>

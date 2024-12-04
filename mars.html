@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Setting the character encoding to UTF-8 -->
+    <meta charset="UTF-8" />
+    <!-- Ensures proper rendering and touch zooming on different devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Linking the external CSS file to style the page -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Title of the webpage that appears in the browser tab -->
+    <title>Solaris - Our Solar System</title>
+  </head>
+
+  <body>
+    <header>
+      <!-- Main header for the webpage -->
+      <h1>Solaris - Our Solar System</h1>
+      <!-- Input field for searching planets -->
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search for a planet..."
+      />
+    </header>
+    <main id="content">
+      <!-- Container to hold all planet/solar body cards (like Earth, Mars, etc.) -->
+      <div id="bodiesContainer"></div>
+
+      <!-- Section for showing a visual representation of the solar system -->
+      <div class="solar-system">
+
+        <!-- Representation of Mars, one of the planets in the solar system -->
+        <div class="planet mars"></div>
+
+        <!-- Text content that explains information about Mars -->
+        <div class="intered-content">
+          <p>
+            Mars, the fourth planet from the Sun, is a frigid,
+            <br> desert-like world enveloped in a thin atmosphere.
+            <br> Despite its harsh conditions, Mars features dynamic weather, 
+            <br> seasons, polar ice caps, dormant volcanoes, and expansive canyons.
+          </p>
+        </div>
+      
+      </div>
+    </main>
+
+    <!-- Linking the external JavaScript file to add functionality to the page -->
+    <script src="index.js"></script>
+  </body>
+</html>

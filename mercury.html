@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Solaris - Our Solar System</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Solaris - Our Solar System</h1>
+      <!-- Input field for searching planets, allows user to type and search for a specific planet -->
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search for a planet..."
+      />
+    </header>
+    <main id="content">
+
+      <!-- Container to hold all planet/solar body cards -->
+      <!-- This will likely be filled with individual cards representing planets or celestial bodies -->
+      <div id="bodiesContainer"></div>
+
+      <div class="solar-system">
+
+        <!-- Representation of the planet Mercury -->
+        <!-- Each planet is represented as a div with a specific class for styling -->
+        <div class="planet mercury"></div>
+
+        <!-- Container for the detailed information about the planet Mercury -->
+        <div class="dctered-content">
+          <!-- Description of Mercury, explaining its position and some unique features -->
+          <p>
+            Mercury, the smallest planet in our solar system, <br />
+            sits closest to the Sun but isn't <br />
+            the hottest—Venus holds that title due to its thick atmosphere.<br />
+            Mercury, only a bit bigger than the Moon, is dotted with many impact craters.<br />
+            Its rapid orbit around the Sun, taking just 88 Earth days, <br />
+            is fittingly named after the quick-footed Roman god, Mercury.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <!-- JavaScript file that contains the functionality of the web page -->
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Sets the character encoding to UTF-8 for supporting special characters -->
+    <meta charset="UTF-8" />
+    <!-- Makes the webpage responsive to different screen sizes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Links the external CSS file for styling the webpage -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Solaris - Our Solar System</title>
+  </head>
+
+  <body>
+    <!-- Main header section -->
+    <header>
+      <h1>Solaris - Our Solar System</h1>
+      <!-- Input field for users to search for a specific planet -->
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search for a planet..."
+      />
+    </header>
+
+    <!-- Main content area -->
+    <main id="content">
+      <!-- A container where the planet cards or details will appear -->
+      <div id="bodiesContainer"></div>
+
+      <!-- Represents the solar system area -->
+      <div class="solar-system">
+        <!-- A div to visually represent the planet Uranus -->
+        <div class="planet uranus"></div>
+
+        <!-- A description section specifically for Uranus -->
+        <div class="ura-content">
+          <!-- Information about Uranus, explaining its unique characteristics -->
+          <p>
+            Uranus, the seventh planet from the Sun,
+            <br />is the third largest in our solar system,
+            <br /> measuring four times wider than Earth.
+            <br />This planet is enveloped in a chilly and windy atmosphere
+            <br />and features faint rings and over two dozen small moons.
+            <br />Its distinct nearly 90-degree axial tilt causes it to rotate
+            on its side,
+            <br /> making it appear to spin horizontally. Uranus's blue-green
+            hue is due to the presence of methane,
+            <br /> which absorbs red light and reflects blue, giving the planet
+            its striking color.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <!-- Links the external JavaScript file to add functionality -->
+    <script src="index.js"></script>
+  </body>
+</html>

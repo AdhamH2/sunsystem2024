@@ -1,0 +1,246 @@
+/* Basic reset for consistent styling across all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0e0f2c; /* Dark blue for a space-like background */
+    color: #ffffff; /* White text for contrast */
+}
+
+/* Header section */
+header {
+    padding: 20px;
+    text-align: center;
+    background: #1a1a40; /* Darker blue for the header */
+}
+
+/* Styling for the input text field */
+input[type="text"] {
+    padding: 10px;
+    margin-top: 10px;
+    width: 50%;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+/* When the input text field is focused */
+input[type="text"]:focus {
+    outline: none;
+    border-color: #ffca28;
+    box-shadow: 0 0 10px #ffca28; /* Highlight effect when focused */
+}
+
+/* Main content area */
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Container for the cards representing celestial bodies */
+#bodiesContainer {
+    display: flex;
+    flex-wrap: wrap; /* Ensure the cards wrap if they overflow */
+    justify-content: center; /* Center the cards */
+    gap: 20px; /* Space between each card */
+    margin-top: 20px;
+}
+
+/* Styling for each card representing a planet */
+.card {
+    background-color: #252550; /* Dark violet for the card background */
+    border-radius: 10px; /* Rounded corners for the card */
+    padding: 20px;
+    width: 300px; /* Consistent width for all cards */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Soft shadow for depth */
+    transition: transform 0.3s; /* Smooth effect when hovered */
+}
+
+/* When the card is hovered over */
+.card:hover {
+    transform: scale(1.05); /* Slightly increase the size on hover */
+}
+
+/* Planet name styling */
+.card h2 {
+    color: #f0a500; /* Highlighted color for planet names */
+}
+
+/* General paragraph styling within cards */
+.card p {
+    font-size: 14px;
+    line-height: 1.5; /* Line height for readability */
+}
+
+/* Container for the solar system visualization */
+.solar-system {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Spread elements across the width */
+    position: relative;
+    height: 600px; /* Height to accommodate the solar system */
+    width: 100%; /* Full width of the page */
+    padding: 0 50px; /* Padding on the sides for spacing */
+}
+
+/* Styling for the sun */
+.sun {
+    width: 800px; /* Large size for the sun */
+    height: 800px;
+    background: radial-gradient(circle, #ffca28, #ff9800); /* Gradient to simulate the sun's light */
+    border-radius: 50%;
+    position: absolute;
+    left: -710px; /* Shift the sun to the left for partial visibility */
+    top: 50%; /* Center the sun vertically */
+    transform: translateY(-50%); /* Adjust to keep the sun in the middle */
+    box-shadow: 0 0 150px 50px rgba(255, 202, 40, 0.5); /* Glow effect around the sun */
+    transition: 0.6s;
+}
+
+/* Hover effect for the sun */
+.sun:hover {
+    scale: 1.05; /* Slightly increase the size when hovered */
+}
+
+/* Sun content margin adjustment */
+.sunis-content {
+    margin-left: 350px;
+}
+
+/* Container for the planets */
+.planets {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; /* Evenly distribute planets across the system */
+    width: 100%;
+    position: relative;
+    z-index: 1; /* Ensure planets are above the sun's glow */
+    gap: 50px; /* Space between planets for better distribution */
+}
+
+/* General styling for each planet */
+.planet {
+    border-radius: 50%;
+    background-color: #ccc; /* Default color for planets */
+}
+
+/* Specific styling for Mercury */
+.mercury {
+    background-color: #a9a9a9;
+    width: 10px;
+    height: 10px;
+    margin-left: 50px; /* Move Mercury slightly away from the sun */
+}
+
+/* Mercury content margin adjustment */
+.dctered-content {
+    margin-right: 150px;
+}
+
+/* Specific styling for Venus */
+.venus {
+    background-color: #f5deb3;
+    width: 20px;
+    height: 20px;
+}
+
+/* Venus content margin adjustment */
+.vena-content {
+    margin-right: 150px;
+}
+
+/* Specific styling for Earth */
+.earth {
+    background-color: #4682b4;
+    width: 22px;
+    height: 22px;
+}
+
+/* Earth content margin adjustment */
+.centered-content {
+    margin-right: 150px;
+}
+
+/* Specific styling for Mars */
+.mars {
+    background-color: #fcb46b; /* Updated color for Mars */
+    width: 12px;
+    height: 12px;
+}
+
+/* Mars content margin adjustment */
+.intered-content {
+    margin-right: 150px;
+}
+
+/* Specific styling for Jupiter */
+.jupiter {
+    background-color: #f4a467; /* New warm orange-brown color for Jupiter */
+    width: 70px;
+    height: 70px;
+    border-radius: 50%; /* Make Jupiter round */
+}
+
+/* Jupiter content margin adjustment */
+.tocent-content {
+    margin-right: 150px;
+}
+
+/* Specific styling for Saturn */
+.saturn {
+    background-color: #e5b977;
+    width: 60px;
+    height: 60px;
+    position: relative;
+    border-radius: 50%; /* Make Saturn round */
+}
+
+/* Saturn's ring */
+.saturn::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    width: 120px; /* Length of the ring */
+    height: 2px; /* Thin ring for a subtle look */
+    background-color: #c8b69e; /* Lighter color for the ring */
+    border-radius: 5px; /* Slightly rounded ring */
+    transform: rotate(-10deg); /* Slight tilt to the left */
+}
+
+/* Saturn content margin adjustment */
+.satis-content {
+    margin-right: 150px;
+}
+
+/* Specific styling for Uranus */
+.uranus {
+    background-color: #87cefa;
+    width: 35px;
+    height: 35px;
+}
+
+/* Uranus content margin adjustment */
+.ura-content {
+    margin-right: 150px;
+}
+
+/* Specific styling for Neptune */
+.neptune {
+    background-color: #4169e1;
+    width: 32px;
+    height: 32px;
+}
+
+/* Neptune content margin adjustment */
+.lipton-content {
+    margin-right: 150px;
+} 

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- This is the head section where metadata and external resources are linked -->
+    <meta charset="UTF-8" /> <!-- Sets character encoding to UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Makes the page responsive for different devices -->
+    <link rel="stylesheet" href="style.css" /> <!-- Links an external CSS file for styling -->
+    <title>Solaris - Our Solar System</title> <!-- Sets the title of the webpage -->
+  </head>
+
+  <body>
+    <!-- The header section of the page -->
+    <header>
+      <h1>Solaris - Our Solar System</h1> <!-- Main heading for the page -->
+      <!-- Input field for searching planets -->
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search for a planet..."
+      />
+    </header>
+
+    <!-- The main content section -->
+    <main id="content">
+      <!-- This container will hold cards for planets or other solar system objects -->
+      <div id="bodiesContainer"></div>
+
+      <!-- A div representing the solar system -->
+      <div class="solar-system">
+        <!-- Represents the Sun in the solar system -->
+        <div class="planet sun"></div>
+
+        <!-- Information about the Sun -->
+        <div class="sunis-content">
+          <p>
+            Our Sun is a 4.5 billion-year-old yellow dwarf star – a hot,
+            <br />
+            glowing sphere of hydrogen and helium –
+            <br />
+            located at the center of our solar system.
+            <br />
+            It’s about 150 million kilometers (93 million miles)
+            <br />
+            from Earth and the only star in our solar system.
+            <br />
+            Without the Sun's energy, life on our planet could not exist.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <!-- Links an external JavaScript file for interactivity -->
+    <script src="index.js"></script>
+  </body>
+</html>
+
+

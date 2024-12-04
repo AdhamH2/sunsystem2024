@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Sets the character encoding of the document to UTF-8 for proper display of text -->
+    <meta charset="UTF-8" />
+    <!-- Ensures the webpage is mobile-friendly by setting the viewport width to the device width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Links the HTML document to an external CSS file for styling -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Specifies the title of the webpage, shown in the browser tab -->
+    <title>Solaris - Our Solar System</title>
+  </head>
+
+  <body>
+    <!-- The main content of the webpage starts here -->
+    <header>
+      <!-- (This header is empty for now, but can be used for navigation or branding) -->
+    </header>
+
+    <main id="content">
+      <!-- The primary section of the webpage holding all interactive and visual content -->
+
+      <!-- Input box where users can type to search for a planet -->
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search for a planet..."
+      />
+
+      <!-- A container to dynamically display information about planets or celestial bodies -->
+      <div id="bodiesContainer"></div>
+
+      <!-- A section representing the solar system -->
+      <div class="solar-system">
+        <!-- Represents the planet Neptune with a visual element (like a circle) -->
+        <div class="planet neptune"></div>
+
+        <!-- Text content about Neptune -->
+        <div class="lipton-content">
+          <p>
+            Neptune, the eighth planet from the Sun, is the most distant
+            <br />
+            in our solar system and ranks as the fourth largest.
+            <br />
+            It holds the distinction of being the first planet
+            <br />
+            discovered not by direct observation, but through
+            <br />
+            mathematical calculations.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <!-- Links the JavaScript file to add functionality and interactivity to the webpage -->
+    <script src="index.js"></script>
+  </body>
+</html>
